@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teamwork for Claude Cowork</title>
+  <meta name="description" content="Connect Claude to other assistants for an AI superteam.">
+  <meta property="og:title" content="Teamwork for Claude Cowork">
+  <meta property="og:description" content="Connect Claude to other assistants for an AI superteam.">
+  <meta property="og:image" content="assets/teamwork-og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/brain-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="https://productivity.nexus" target="_blank" class="logo">
+        <!-- Productivity Nexus Icon: three colored bars with mix-blend-mode multiply -->
+        <svg class="logo-icon" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg" style="isolation: isolate;">
+          <!-- Blue vertical bar -->
+          <rect x="9.75" y="0" width="6.5" height="27" fill="#0196CC" style="mix-blend-mode: multiply"/>
+          <!-- Yellow horizontal bar -->
+          <rect x="0" y="10.1" width="26" height="6.8" fill="#F5E002" style="mix-blend-mode: multiply"/>
+          <!-- Pink diagonal bar -->
+          <rect x="9.4" y="-1" width="7.2" height="29" fill="#F258B8" transform="rotate(45 13 13.5)" style="mix-blend-mode: multiply"/>
+        </svg>
+        <span class="logo-text">Productivity Nexus</span>
+      </a>
+      <a href="https://productivity.nexus" target="_blank" class="btn-subscribe">Subscribe</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero-outer">
+      <div class="hero">
+
+        <!-- Left column -->
+        <div class="col-left">
+          <h1>Wisdom<br>of the <span class="accent">Claude</span>.</h1>
+
+          <p class="tagline">Don't choose an AI assistant.<br class="mobile-break"> <span class="accent-bold">Unite them.</span></p>
+
+          <div class="body-text">
+            <p><strong>Teamwork</strong> is a <a href="https://code.claude.com/docs/en/skills" target="_blank">skill</a> for Claude Cowork that connects Claude to ChatGPT, Gemini, and Grok. They can <strong>validate</strong> and <strong>enhance</strong> Claude's responses, or provide their own responses for Claude to <strong>synthesize</strong> with the best of each.</p>
+            <p>It's been the secret sauce of the <a href="https://nutt.io" target="_blank">Nutt Labs</a> operation for months—and we can't wait for it to supercharge yours.</p>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-right">
+          <div class="brain-wrap">
+            <img src="assets/brain-and-icons.png" alt="Brain surrounded by ChatGPT, Claude, Gemini, and Grok icons">
+          </div>
+
+          <a href="#" class="btn-cta" id="btn-cta">
+            <span class="cta-label">Pay what you can</span><span class="cta-arrow">&nbsp;→</span>
+          </a>
+
+          <div class="terms-row">
+            <label class="terms-check">
+              <input type="checkbox" id="terms-checkbox">
+              <span class="check-box"></span>
+              <span class="check-label">I have read the lowdown below and agree to the Terms of Use.</span>
+            </label>
+            <p class="terms-error" id="terms-error">Please agree to the Terms of Use.</p>
+          </div>
+
+          <div class="faqs">
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">What's it cost?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>You name it. We recommend $5–$10 to help cover costs and fund new resources, but you can pay as little as $2. (The minimum filters out spam.)</p>
+                  <p>Teamwork connects to other models through their APIs. Most services offer a free monthly token allotment, after which costs are minimal. Claude will offer tips to help you use your tokens efficiently!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">How do I install it?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>You'll receive the skill file by email. Easily add it to Claude Cowork via Customize → Skills.</p>
+                  <p>Once installed, you can send Claude a prompt like "Let's configure your teamwork skill" to begin the simple configuration process.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Is it safe?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Teamwork only connects Claude to the specific AI services you choose and uses no other background services. It's essentially a set of preconfigured instructions for Cowork.</p>
+                  <p>During onboarding, you'll obtain API keys for your selected services. It's important to treat those like passwords and never expose them to anyone else.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Does it work with Claude Chat?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>No, it does not work with Claude Chat on the web or desktop. To make "calls" to other models, Teamwork requires the deeper computer capabilities that Claude Cowork (and Code) use via the <a href="https://support.claude.com/en/articles/10065433-installing-claude-desktop">desktop app</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">How can I get updates?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Teamwork will continue evolving quickly! If you choose $10 or more at checkout, you'll receive each new version by email.</p>
+                  <p>You can also get lifetime updates by referring two other users. Once they're onboard, reply to any productivity.nexus email to let us know who you referred.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">Who's behind it?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Teamwork was created for internal use by <a href="https://nutt.io" target="_blank">Nutt Labs</a>, led by <a href="https://linkedin.com/in/williamnutt" target="_blank">William Nutt</a>. William is trusted worldwide as the top Notion expert (and creator of <a href="https://notion.vip" target="_blank">Notion VIP</a>) and an authoritative voice on AI and automation.</p>
+                  <p>When we saw its superpowers, we adapted it for everyone&amp;and we can't wait for you to experience the same impact!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">The Fine Print (Terms of Use)</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Because AI is inherently unpredictable, Teamwork is provided "as-is" and without warranties of any kind. We are not liable for any damages arising from your use of the skill or its connected third-party services.</p>
+                  <p>Because we offer this at a very low cost, Teamwork is provided without technical support or assistance, and all purchases are final and non-refundable.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">Copyright ©2026 <a href="#">Nutt Labs</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
